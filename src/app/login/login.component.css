@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+}
+
+.form-container {
+  width: 33%;
+  transform: translate(95%, 5%);
+  border: 1px solid dodgerblue;
+  border-radius: 10px;
+  margin-top: 1% auto;
+  background: #7f7fd5;
+  background: -webkit-linear-gradient(to bottom, #91eae4, #86a8e7, #7f7fd5);
+  background: linear-gradient(to bottom, #91eae4, #86a8e7, #7f7fd5);
+}
+form {
+  transform: translate(10%);
+}
+
+#result {
+  width: 33%;
+  transform: translate(95%, 5%);
+  border-radius: 10px;
+  margin-top: 1% auto;
+  color: white;
+  text-align: center;
+  padding: 1.5% 0;
+  font-weight: bold;
+  display: none;
+}
+
+#username,
+#password {
+  font-size: 15px;
+}
+
+.input-container {
+  display: flex;
+  width: 300px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  margin-left: 10px;
+}
+
+.icon {
+  padding: 8px;
+  background: dodgerblue;
+  color: white;
+  min-width: 40px;
+  text-align: center;
+}
+
+.input-field {
+  width: 100%;
+  padding: 8px;
+  outline: none;
+}
+
+.input-field:focus {
+  border: 2px solid dodgerblue;
+}
+
+.show-pswd {
+  margin: 10px;
+  color: black;
+  display: flex;
+}
+
+.show-pswd .checkbox-text {
+  padding-top: 3px;
+  padding-left: 3px;
+}
+
+.btn {
+  background-color: #33cc00;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  width: 300px;
+  opacity: 1;
+  margin: 10px;
+  margin-top: 0px;
+  border-radius: 5px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+input[type='checkbox'] {
+  width: 18px;
+  height: 18px;
+}
+
+.heading {
+  transform: translate(-10%);
+  width: 100%;
+  height: 60px;
+  background-color: dodgerblue;
+  color: white;
+  text-align: center;
+  padding-top: 18px;
+  font-size: 20px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.login-options {
+  display: flex;
+  margin: 30px;
+  margin-left: 20px;
+}
+
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+.or-options {
+  margin-top: 10px;
+}
+.facebook .fa {
+  font-size: 18px;
+  width: 45px;
+  margin-left: 30px;
+}
+
+.facebook {
+  display: flex;
+}
+
+.facebook .facebook-bg {
+  width: 80px;
+  font-size: 16px;
+  padding-left: 10px;
+  background: #3b5998;
+  color: #f1f3f5;
+  padding-top: 8px;
+  padding-left: 15px;
+  text-decoration: none;
+}
+
+.facebook .facebook-bg:hover,
+.fa:hover {
+  opacity: 0.8;
+}

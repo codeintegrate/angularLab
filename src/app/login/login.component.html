@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Login</title>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta
+      name="google-signin-client_id"
+      content="431755900850-hj63duh4igs0cmhig2tke2t6h0c0gk0g.apps.googleusercontent.com"
+    />
+  </head>
+  <body>
+    <div id="result"></div>
+    <div class="form-container">
+      <form (submit)="doNotRefresh($event)">
+        <div class="heading">LOGIN HERE</div>
+        <div class="input-container">
+          <i class="fa fa-user icon"></i>
+          <input
+            class="input-field"
+            type="text"
+            placeholder="Enter Username"
+            name="usrnm"
+            #username
+          />
+        </div>
+
+        <div class="input-container">
+          <i class="fa fa-key icon"></i>
+          <input
+            class="input-field"
+            type="password"
+            placeholder="Enter Password"
+            name="psw"
+            autocomplete="on"
+            #password
+          />
+        </div>
+
+        <button
+          type="submit"
+          class="btn"
+          (click)="showCredentials(username.value, password.value)"
+        >
+          Login
+        </button>
+        <div
+          style="width: 300px; height: 20px; border-bottom: 1px solid #f3f1a9; text-align: center; margin-left: 10px; margin-top: 10px"
+          class="Or-options"
+        >
+          <span
+            style="font-size: 14px; background-color: #f3f1a9; padding: 8px 10px"
+          >
+            OR
+          </span>
+        </div>
+        <div class="login-options">
+          <div class="g-signin2" data-onsuccess="onSignIn"></div>
+          <div class="facebook">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="facebook-bg">Sign in</a>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
