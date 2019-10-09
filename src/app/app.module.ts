@@ -7,13 +7,15 @@ import {FormsModule} from '@angular/forms';
 import { HeroesComponent } from './heroes/heroes.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { HighlightDirective } from './highlight.directive';
+import { MessagesComponent } from './messages/messages.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeroesComponent,
     HeroDetailComponent,
-    HighlightDirective
+    HighlightDirective,
+    MessagesComponent
   ],
   imports: [
     BrowserModule,
